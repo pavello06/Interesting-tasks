@@ -1,0 +1,11 @@
+C:\BSUIR\AiSD\Block5_Tree\Tree\bin\Debug\Tree.exe.config
+C:\BSUIR\AiSD\Block5_Tree\Tree\bin\Debug\Tree.exe
+C:\BSUIR\AiSD\Block5_Tree\Tree\bin\Debug\Tree.pdb
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.csproj.AssemblyReference.cache
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.Properties.Resources.resources
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.csproj.GenerateResource.cache
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.csproj.CoreCompileInputs.cache
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.exe
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.pdb
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.ActionForm.resources
+C:\BSUIR\AiSD\Block5_Tree\Tree\obj\Debug\Tree.MainForm.resources
