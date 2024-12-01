@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrientedGraph")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f693c91e32f4df31dbf1bec5eef11bd217f2dc8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b225bd66341cba33002384e7cab241a4fed95b83")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrientedGraph")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrientedGraph")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
