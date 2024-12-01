@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Oriented_Graph
+﻿namespace Oriented_Graph
 {
     internal class OrientedGraph<T> where T : IComparable<T>
     {
@@ -15,38 +9,55 @@ namespace Oriented_Graph
             Verticies = new List<Vertex<T>>();
         }
 
+        public Vertex<T>? GetVertex(T value)
+        {
+            foreach (var vertex in Verticies)
+            {
+                if (vertex.Value.CompareTo(value) == 0)
+                {
+                    return vertex;
+                }
+            }
+            return null;
+        }
+
         public void AddVertex(T value)
         {
-            if (!ContainsVertex(value))
+            if (GetVertex(value) == null)
             {
                 var vertex = new Vertex<T>(value);
                 Verticies.Add(vertex);
             }
         }
 
-        private bool ContainsVertex(T value)
-        {
-            foreach (var vertex in Verticies) 
-            {
-                if (vertex.Value.CompareTo(value) == 0)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         public void RemoveVertex(T value)
         {
-            for (int i = 0; i < Verticies.Count; i++)
+            var vertex1 = GetVertex(value);
+            foreach (var vertex2 in Verticies)
             {
-                if (Verticies[i].Value.CompareTo(value) == 0)
-                {
-                    Verticies.RemoveAt(i);
-                    return;
-                }
+                RemoveEdge(vertex2.Value, vertex1.Value);
+            }
+            Verticies.Remove(vertex1);
+        }
+
+        public void AddEdge(T value1, T value2)
+        {
+            AddVertex(value1);
+            AddVertex(value2);
+
+            var vertex1 = GetVertex(value1);
+            var vertex2 = GetVertex(value2);
+            if (!vertex1.Edges.Verticies.Contains(vertex2))
+            {
+                vertex1.Edges.Verticies.Add(vertex2);
             }
         }
-        
+
+        public void RemoveEdge(T value1, T value2)
+        {
+            var vertex1 = GetVertex(value1);
+            var vertex2 = GetVertex(value2);
+            vertex1.Edges.Verticies.Remove(vertex2);
+        }
     }
 }
