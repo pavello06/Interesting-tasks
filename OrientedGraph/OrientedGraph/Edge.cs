@@ -2,11 +2,11 @@
 {
     internal class Edge<T>
     {
-        public List<Vertex<T>> Vertices;
+        public List<Vertex<T>> Verticies;
 
         public Edge()
         {
-            Vertices = new List<Vertex<T>>();
+            Verticies = new List<Vertex<T>>();
         }
     }
 }
