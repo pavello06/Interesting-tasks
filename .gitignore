@@ -1,0 +1,7 @@
+obj/
+Properties/
+*.exe
+*.vs/
+*.csproj
+*.resx
+*.user
